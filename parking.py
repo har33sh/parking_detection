@@ -44,7 +44,7 @@ import argparse
 
 
 def get_test_input(input_dim, CUDA):
-    img = cv2.imread("test_images/1.jpg")
+    img = cv2.imread("test_images/1.png")
     img = cv2.resize(img, (input_dim, input_dim))
     img_ =  img[:,:,::-1].transpose((2,0,1))
     img_ = img_[np.newaxis,:,:,:]/255.0
