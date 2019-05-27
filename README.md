@@ -1,9 +1,36 @@
-# Smart-Park-with-YOLO-V3
-Maintaining empty parking spot count using YOLO real-time vehicle detection. Code readily runnable in google colab.
-Due to occlusions (coming due to the presence of mirror in the middle of camera and parking lot which slightly reflects nearby people passing through), low resolution of video and positioning of cars at different angles in the parking lot and limitations of yolo, it cannot detect every car in all the frames and hence the count fluctuates. Please don't mind the wrong number of empty spots, I didn't count them before running the program since my focus was to check whether the count fluctuates or not.
 
-![](yolo_limit.gif)
 
-Same is the case with Mask-RCNN. But for a different video with high resolution and less occlusions, the case becomes different. Note that in the video below, the moving car comes in front of the parked on for few seconds and thus YOLO couldn't detect the occluded car and the count changed. Other than that it worked fine for the resolution the video had. 
+Using https://colab.research.google.com (Recommended)
 
-![](more_resolution.gif)
+Step 1: Clone the files available at link https://github.com/har33sh/Smart-Park-with-YOLO-V3 on google drive.
+Step 2: Run Yolo_park.ipynb using colab option.
+Step 3: Go Runtime/Runall.
+
+
+
+
+
+Without https://github.com/har33sh/Smart-Park-with-YOLO-V3
+
+Step 1: Clone the files available at link https://github.com/har33sh/Smart-Park-with-YOLO-V3 on google drive.
+Step 2: Download the list of dependencies given below soo that you can run our script.
+1) torch
+2) glob
+3) os
+4) numpy
+5) torchvision
+6) numpy 
+7) pickle
+8) pandas
+9) cuda
+10) cv2
+11) glob
+12) 
+
+Step 3: Run the parking.py using "python parking.py"
+
+Step 4: Enter the location of the Input file
+
+Step 5: Results for the given image will be printed in the terminal and the output image containing the parked spots will be available in the "results" folder under the name "result.jpg"
+
+
